@@ -1,0 +1,60 @@
+Actions act = new Actions(driver);
+act.doubleClick(element);
+act.contextClick(element)
+act.movetoelement(element).perform();
+
+builder.clickAndHold(fromWebElement)
+		     .moveToElement(toWebElement)
+		     .release(toWebElement)
+        	     .build();
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+alert.dismiss();
+
+Robot robo = new Robot();
+
+
+200 OK
+Indicates that the request has succeeded.
+201 Created
+Indicates that the request has succeeded and a new resource has been created as a result.
+202 Accepted
+Indicates that the request has been received but not completed yet. It is typically used in log running requests and batch processing.
+
+204 No Content
+The server has fulfilled the request but does not need to return a response body. The server may return the updated meta information.
+
+
+
+400---bad req
+
+401---unauthorised--Indicates that the request requires user authentication information. The client MAY repeat the request with a suitable Authorization header field
+
+403 Forbidden
+Unauthorized request. The client does not have access rights to the content. Unlike 401, the client’s identity is known to the server.
+
+404 Not Found
+The server can not find the requested resource.
+
+405 Method Not Allowed
+The request HTTP method is known by the server but has been disabled and cannot be used for that resource.
+
+
+
+
+500 Internal Server Error
+The server encountered an unexpected condition that prevented it from fulfilling the request.
+
+501 Not Implemented
+The HTTP method is not supported by the server and cannot be handled.
+
+502 Bad Gateway
+The server got an invalid response while working as a gateway to get the response needed to handle the request.
+
+503 Service Unavailable
+The server is not ready to handle the request.
+
+504 Gateway Timeout
+The server is acting as a gateway and cannot get a response in time for a request.
+

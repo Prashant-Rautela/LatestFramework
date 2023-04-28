@@ -1,0 +1,18 @@
+give generic file location: **/test.jar
+the above command will ask to jenkins to look for any file with test.jar suffix.
+
+how to set environment variables or do paramtrization in jenkins.
+
+string, choice or boolean--type of parameters in jenkins
+
+
+sample naming convention:
+%STRING_PARAMETER%  --> Build section for winodws
+$STRING_PARAMETER$ --> IN mac or linux
+
+in general--select this project is parameterised
+
+jenkins scheduler format:
+minute--> hour-->day of the month--> month--> day of week
+
+pipelines: group of jobs

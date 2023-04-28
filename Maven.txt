@@ -1,0 +1,33 @@
+Details in the POM.xml files:
+
+Project details: group id, artifact id, version
+Properties, Dependencies, Build (defines plugins to build the project), report section.
+
+Repositories, profiles..
+
+Properties: reduces duplication, configuration
+
+parent pom, reactors? 
+
+archetype: templates of the project maven in-built.
+
+build life cycles: default, clean, site
+
+default--> main life cycle--> validate, compile, test, package, verify, install, deploy
+
+so, when we sat mvn package, maven will run all the goals till and include package.
+
+clean--> cleans project
+
+site--> generates project dcoumentations
+
+
+Scope and Dependency:
+
+Compile scope is the default scope of any dependency.
+transitive in nature.
+
+
+
+
+

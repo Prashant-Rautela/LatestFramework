@@ -1,0 +1,90 @@
+Questions that help you get started performance?
+
+1. why do you want me to do perf testing--> business needs this will help us estimating loads
+2. tools available
+3. how can i get data i want--> data to do perf testing--maybe we need server logs to figure out perf
+
+important perf parameters:
+Load time: when your page is fully loaded or you dom is fully generated.
+
+Start render: when something starts seeing on the screen to the user.
+
+
+What to measure?
+1. respons time: how fast app is loaded, variablity of the time or which time you are exactly measuring like when user sees some content on the page or full content on the page. there might be cases when page is fully loaded for user to see but some backend processing is going on.
+2. stability: error rates (understand and compare error rates, check server logs, CPU time and memory usage, queued request & thread utilisation on server like how many transactions server cn handle), 
+
+
+we also need to think on some Non code performance issues while designing performance cases: factors like something which we can't fix via code.
+1. Latency:
+2. network speeds.
+3. human perception
+
+
+Finding bottlenecks: potential bottleneck: I/O opearions like database read, third party applications, network latency, design issues.
+
+**********************************************
+how to check if the errors we are getting in the performance run is because of some other issues or it is actually an issue.
+
+One way to handle it to check running average time of lets say last 5-10 runs.
+other way could be to check the max running time.
+
+****************************************************************88
+
+HOW WOULD YOU DESIGN LOAD TEST.
+
+1. what type of load to give your application. liek basic load, ramp up and ramp down laod, mltistep ramping updown.
+2. what you are going to measure: 
+3. where are you running? test env, prod etc.
+
+
+
+Stress testing: we will keep adding user till something important breaks. idea is to check how system behaves once we cross the threshold of number of user. and when system fails, does it fail gracefully or random. "swap memory? " 
+
+Endurance testing: sustained the load for a long time. here we are not incresing user over time. here load is sustained for a very long time.easy to design like how many users do you want and for what duration (1 hour or days etc.), so we need good and stable environment which can be up and running for that duration. imp parameters to check: memory consumption or message cues that may cause data issues.
+
+Spike testing: how big of a spike for 5-10 minutes suddennly load increases on the application. add more users for a short span of time like below.
+
+
+            /\    /\
+           /  \  /  \
+----------/    \/    \------
+parameters to check: error percentage, timeouts 
+
+Scalabality testing: 
+
+****************************************************************************************
+
+
+read about Statistics in performance testing:
+
+************************************************** JMETER**********************
+
+Thread-groupd--> start thread group: performed specified action at the start of the load test.
+active thread group: acting as a group of users performing specified actions within the test plan.
+shut down thread groupd: performed specified action at the end of the load test.
+
+sampler: type of action you want threads to perform.
+
+Listeners: to listen the test and display information from the test. only recommend for debugging/creating tests. can use a lot of resources if not used correctly. these listeners are ignored when running test in non gui mode.
+
+when running our test in non-gui mode, .jtl file is helpful to read the test resutl
+
+********************************************************************************************
+
+Distributed testing using jmeter:
+
+Configure master server.
+Then each server/machine to run the test.
+each of the master and server machine need to have jmeter installed of same version,
+
+
+
+
+
+
+
+
+
+
+

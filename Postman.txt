@@ -1,0 +1,32 @@
+Trash section: to recover deleted postman.
+
+
+Headers section
+Accept key: in what format postman will show you response.
+
+Presets: to club all the headers and save it under one preset, so that you can copy all the headers values using preset option.
+Quickly add groups of header key/value pairs to the request. Start typing the name of the preset name and it'll show up in the dropdown list.
+
+Set up environment variable;
+
+global variable: accesible across the workspace.
+env variable: accesible only across the environment.
+
+if both env and global variable has same name, env varible will be given preference.
+
+persist all: to reflect initial value as current value.
+
+reset all: to not set current value as initial value.
+
+To run postman tests from newman command line.
+
+newman run collectionname --e environmentcollection
+
+*************************************************
+
+authentication: is about verifying who you are?
+authorization: is above verifying what you can do?
+
+
+
+
