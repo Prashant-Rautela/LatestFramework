@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\features"},
+		features = {"src\\test\\resources\\features\\accountPage.feature"},
 		glue = {"stepsDefinitions", "hooks"},
 		plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failedTest.txt"}

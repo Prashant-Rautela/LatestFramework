@@ -1,0 +1,5 @@
+stepsDefinitions\loginStepsDefinitions.class
+runnerPackage\FailedRunner.class
+stepsDefinitions\LaunchGoogle.class
+runnerPackage\TestRunner.class
+hooks\ApplicaionHooks.class
